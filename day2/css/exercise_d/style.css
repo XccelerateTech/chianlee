@@ -1,0 +1,21 @@
+div {
+	width: 100px;
+	height: 100px;
+}
+
+#blue {
+	background: blue;
+	float: left;
+}
+
+#green {
+	background: green;
+	float: right;
+}
+
+
+#red {
+	background: red;
+	clear: both;
+	margin: 0 auto;
+}
