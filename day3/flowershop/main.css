@@ -1,5 +1,5 @@
 /*@media screen and (min-width: 500px) {
-
+	
 }
 */
 
@@ -13,16 +13,21 @@ body {
 }
 
 #container {
-	width: 800px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
 main {
-	background-image: url("flowershop.jpg");
-	width: 100%;
+	background-image: url("assets/flowershop.jpg");
+
 	background-size: 100% 100%;
 	height: 500px;
 	text-align: center;
+}
+
+main:after {
+	opacity: 0.5;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 main h2 {
@@ -30,7 +35,6 @@ main h2 {
 	text-align: center;
 	padding-top: 200px;
 	font-size: 3em;
-	z-index: 5;
 
 }
 
@@ -45,43 +49,36 @@ a.button {
 	text-decoration: none;
 }
 
-.overlay {
-	width: 100%;
-	height: 100%;
-	background-color: #000000;
-	opacity: 0.5;
-	position: absolute;
-}
+
 
 footer {
 	background-color: #bfff94;
-	padding-bottom: 30px;
+
 }
 
 .icon li {
 	box-sizing: border-box;
 	display: inline-block;
-	width: 49%;
 	list-style: none;
-	padding: 50px 50px 50px 150px;
+	padding: 20px 50px 50px 100px;
 }
 
 #flower {
-	background: url("flower-icon.png") 80px 40px no-repeat;
+	background: url("assets/flower-icon.png") 40px 26px no-repeat;
 	background-size: 50px;
 }
 
 #money {
-	background: url("payment-icon.png") 80px 40px no-repeat;
+	background: url("assets/payment-icon.png") 40px 26px no-repeat;
 	background-size: 50px;
 }
 
 #consultation {
-	background: url("phone-icon.png") 80px 40px no-repeat;
+	background: url("assets/phone-icon.png") 40px 26px no-repeat;
 	background-size: 50px;
 }
 
 #delivery {
-	background: url("truck-icon.png") 80px 40px no-repeat;
+	background: url("assets/truck-icon.png") 40px 26px no-repeat;
 	background-size: 50px;
 }
