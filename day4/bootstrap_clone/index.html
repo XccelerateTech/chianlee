@@ -11,7 +11,7 @@
     <title>Bootstrap</title>
   </head>
   <body>
-  	<nav class="navbar navbar-expand-lg bg-dark fixed-top">
+  	<nav class="navbar navbar-expand-lg bg-dark fixed-top" id="#top">
 		  <a class="navbar-brand" href="#">The only website</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -43,18 +43,18 @@
 
 			<p>Take a look around at the same bootstrap page you've seen ten million times before! Featuring all the same things as those pages!</p>
 
-			<button class="btn btn-primary">This button make the page scroll.</button>
+			<a href="#sub-home"><button class="btn btn-primary">This button make the page scroll.</button></a>
 			</section>
 		</section>
 
-		<section class="sub-home">
+		<section class="sub-home" id="sub-home">
 			<h2>Want to make an original website yourself?</h2>
 
 			<div class="underline inverted"></div>
 
 			<p>Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
 
-			<button class="btn btn-secondary">Google that</button>
+			<a class="btn btn-secondary" href="http://lmgtfy.com/?q=bootstrap+template" target="_blank">Google that</a>
 		</section>
 
 
@@ -64,25 +64,25 @@
 			<div class="underline"></div>
 
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-6 col-lg-3 col-12">
 					<img src="assets/love.svg" class="icon">
 					<h5>This Template</h5>
 					<p>Guaranteed to use the same template that every other bootstrap website uses, downloaded straight from The Web™</p>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-md-6 col-lg-3 col-12">
 					<img src="assets/like.svg" class="icon">
 					<h5>This Sets of Four Icon</h5>
 					<p>Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-md-6 col-lg-3 col-12">
 					<img src="assets/plane.svg" class="icon">
 					<h5>Lots of Effort</h5>
 					<p>We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-md-6 col-lg-3 col-12">
 					<img src="assets/world.svg" class="icon">
 					<h5>Made with Love</h5>
 					<p>Because nothing says hard work and talent like editing a few lines of text.</p>
@@ -91,26 +91,30 @@
 		</section>
 
 		<section class="pictures">
-			<div class="row">
-				<div class="col-md-3">
+			<div class="row no-gutters">
+				<div class="col-lg-3 col-md-6 col-12 cover">
 					<img src="assets/girl.jpg" class="pic">
+					<div class="overlay">One Thing</div>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6 col-12 cover">
 					<img src="assets/balloon.jpg" class="pic">
+					<div class="overlay">Two Thing</div>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6 col-12 cover">
 					<img src="assets/ancient.jpg" class="pic">
+					<div class="overlay">Three Thing</div>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6 col-12 cover">
 					<img src="assets/mushroom.jpg" class="pic">
+					<div class="overlay">Four Thing</div>
 				</div>
 			</div>
 
 			<h2>Seriously, It's This Template !</h2>
-			<button>That's Amazing</button>
+			<a href="#top">That's Amazing</a>
 		</section>
 
 		<section class="contact">
@@ -128,7 +132,7 @@
 
 				<div class="col-md-6">
 					<img src="assets/world.svg" class="icon">
-					<p>holy@cow.com</p>
+					<a href="mailto:michael.bluth@example.com">holy@cow.com</a>
 				</div>
 			</div>
 
