@@ -1,0 +1,137 @@
+/*body {
+	background: no-repeat url('assets/balloon.jpg');
+}*/
+
+.bg {
+	background: no-repeat url('assets/balloon.jpg');
+}
+
+
+p {  
+	font-family: serif;
+	font-size: 20px;
+	color: #787573;
+}
+
+hr {
+	margin: 0;
+}
+
+a {
+	color: #ccc;
+}
+
+.underline {
+	width: 80px;
+	height: 5px;
+	margin: 0 auto;
+	background-color: orange;
+}
+
+.underline.inverted {
+	background-color: white;
+}
+
+.home {
+	padding: 200px 0;
+	text-align: center;
+}
+
+.home h1 {
+	color: #000;
+	font-size: 70px;
+	text-transform: uppercase;
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+.home p {
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+
+.sub-home {
+	padding: 50px 0;
+	text-align: center;
+	background-color: #ff6200;
+}
+
+.sub-home h2,
+.sub-home p {
+	max-width: 800px;
+	margin: 20px auto;
+
+}
+
+.sub-home h2 {
+	color: #fff;
+}
+
+.sub-home p {
+	text-align: justify;
+	color: #f5f5f5;
+}
+
+.creative {
+	text-align: center;
+	padding: 100px 0;
+}
+
+.creative h2 {
+	padding-bottom: 20px;
+}
+.creative div.row {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.icon {
+	width: 70px;
+	margin: 20px;
+}
+
+
+.pic {
+	max-height: 300px;
+}
+
+.pictures {
+	background-color: #000;
+	text-align: center;
+}
+
+.pictures h2 {
+	color: #FFFFFF;
+	margin: 45px 0;
+}
+
+.pictures button {
+	border-radius: 40px;
+	background-color: #FFF;
+	padding: 10px 20px;
+	margin-bottom: 40px;
+}
+
+.contact {
+	padding: 50px 0;
+	text-align: center;
+}
+
+.contact h2 {
+	padding-bottom: 20px;
+}
+
+.contact p {
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+.contact .row {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.contact .icon {
+	margin: 0;
+}
