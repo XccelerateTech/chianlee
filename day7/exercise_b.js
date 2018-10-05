@@ -1,11 +1,11 @@
 function Player(name) {
 	this.name = name;
-	this.health = 100;
+	this.health_point = 100;
 	this.counter = 0;
 }
 
 Player.prototype.attack = function(enemy) {
-	enemy.health -= 10;
+	enemy.health_point -= 10;
 	this.counter += 1;
 	if (this.counter === 3) {
 		this.counter = 0;
@@ -15,14 +15,14 @@ Player.prototype.attack = function(enemy) {
 }
 
 Player.prototype.health = function() {
-	this.health += 5;
+	this.health_point += 5;
 }
 
 var tom = new Player('tom');
 var jerry = new Player('jerry');
 var players = [tom, jerry];
 
-while (tom.health > 0 && jerry.health > 0) {
+while (tom.health_point > 0 && jerry.health_point > 0) {
 	let attackerIndex = getRandomInt(2);
 	let attacker = players[attackerIndex];
 	let defenderIndex = attackerIndex === 1 ? 0 : 1;
@@ -31,14 +31,14 @@ while (tom.health > 0 && jerry.health > 0) {
 	attacker.attack(defender);
 }
 
-if (tom.health === 0) {
+if (tom.health_point === 0) {
 	console.log("the winner is " + jerry.name);	
-	console.log('health jerry ' + jerry.health);
-	console.log('health tommy ' + tom.health);
+	console.log('health jerry ' + jerry.health_point);
+	console.log('health tommy ' + tom.health_point);
 } else {
 	console.log("the winner is " + tom.name);	
-	console.log('score jerry ' + jerry.health);
-	console.log('score tommy ' + tom.health);
+	console.log('score jerry ' + jerry.health_point);
+	console.log('score tommy ' + tom.health_point);
 }
 
 
