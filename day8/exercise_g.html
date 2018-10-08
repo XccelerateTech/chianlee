@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="parent">
+		<p>child</p>
+		<a href="#">child anchor.</a>
+	</div>
+
+	<script type="text/javascript">
+		function find_and_destroy(id) {
+			var element = document.getElementById(id);
+
+			while(element.firstChild) {
+				element.removeChild(element.firstChild);
+			}
+		}
+	</script>
+</body>
+</html>

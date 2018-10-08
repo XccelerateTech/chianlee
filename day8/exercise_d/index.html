@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		class User {
+			constructor(option) {
+				this.first_name = option.name.first;
+				this.last_name = option.name.last;
+				this.email = option.email;
+				this.date_of_birth = option.dob.date.split('T')[0];
+			}
+
+		}
+
+		var users = []
+
+		function createRandomUser() {
+			var http = new XMLHttpRequest();
+			var link = "https://randomuser.me/api/";
+			http.open('GET', link, false);
+			http.onreadystatechange = function() {
+				if (http.readyState != XMLHttpRequest.DONE) {
+					return;
+				} else if (http.status == 200) {
+					let data = JSON.parse(http.responseText);
+					var user = new User(data.results[0])
+					users.push(user);
+				} else {
+					console.log('error occured' + http.status);
+				}
+			}
+			http.send();
+		}
+
+		for (let i = 0; i < 5; i += 1) {
+			createRandomUser();	
+		}
+		console.log(users);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

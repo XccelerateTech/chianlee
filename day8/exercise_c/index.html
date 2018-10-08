@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function whoIsInSpace() {
+			var http = new XMLHttpRequest();
+
+			var link = "http://api.open-notify.org/astros.json"
+
+			http.open('GET', link, true);
+
+			http.onreadystatechange = function() {
+				if (http.readyState != XMLHttpRequest.DONE) {
+					return;
+				} else if (http.status == 200) {
+					let data = JSON.parse(http.responseText);
+					let names =  data.people.map( function(obj) {
+						return obj.name;
+					});
+					console.log(names);
+ 				} else {
+					console.log('error occured' + http.status);
+				}
+			}
+
+			http.send();
+		}
+
+		whoIsInSpace();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
