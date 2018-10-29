@@ -4,25 +4,19 @@
 	<title></title>
 </head>
 <body>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
 
-    <form action="#coordinate" method="post" id="form">
+    <form action="" method="post" id="coordinate">
       <input type="text" name="lat">
       <input type="text" name="lng">
       <input type="submit">
     </form>
 
-  	<script type="text/javascript">
-      
-      $(function() {
-        $.ajax({
-          url: `https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400`
-        })
-      })
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="main.js"></script>
 
-		</script>
 </body>
 </html>		

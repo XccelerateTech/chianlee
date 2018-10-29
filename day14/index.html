@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type='text/javascript' src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+
+	<canvas id="canvas-real" class="canvas" width='1280px' height='720px'></canvas>
+	<canvas id="canvas-draft" class="canvas" width='1280px' height='720px'></canvas>
+	<script type='text/javascript' src="canvas-common.js"></script>
+	<script type='text/javascript' src="drawing-line.js"></script>
+	<script type='text/javascript' src="drawing-rectangle.js"></script>
+	<script type='text/javascript'>    
+	    // Switch based on User input, for example like clickong a button or something else. We will talk about this part in the section after this one. 
+	    // currentFunction = new DrawingLine(contextReal,contextDraft);
+	    currentFunction = new DrawingRectangle(contextReal,contextDraft);
+	</script>
+</body>
+</html>
