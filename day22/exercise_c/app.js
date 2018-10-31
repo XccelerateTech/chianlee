@@ -4,9 +4,9 @@ var path = require('path');
 
 http.createServer(function(req, res) {
 
-	    let filePath = req.url == '/' ? "index.html" : req.url;
+  let filePath = req.url == '/' ? "index.html" : req.url;
 
-	res.writeHead(300, {'Content-Type': 'text/html2'});
+	res.writeHead(300, {'Content-Type': 'text/html'});
 
 
 	fs.createReadStream(path.join(__dirname, 'flowershop', filePath)).pipe(res);
