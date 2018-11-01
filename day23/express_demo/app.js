@@ -1,22 +1,18 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const fileUpload = require('express-fileupload');
+var express = require('express');
 
+var app = express();
 
-const path = require('path');
-const app = express();
-
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(fileUpload());
-
-app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, 'index.html'));
+app.get('/', function(req, res) {
+	res.send('GET request to the homepage');
 });
 
-app.post('/login', (req,res) => {
-	console.log(req.body);
-	console.log(req.files);
-	res.send('Login info received');
+app.post('/', function(req, res) {
+	res.send('POST request to the homepage')
 });
 
-app.listen(8080);
+app.all('/secret', function (req, res, next) {
+  console.log('Accessing the secret section ...')
+  next() // pass control to the next handler
+})
+
+app.listen(3000);
