@@ -1,0 +1,1 @@
+SELECT * FROM stock JOIN citrus ON stock.citrus_id = citrus.id;
