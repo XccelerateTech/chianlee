@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './ExState/App';
+import App from './ApprovalCard/App';
 
 
 import Counter from './Counter/Counter'
